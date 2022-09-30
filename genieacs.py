@@ -5,7 +5,7 @@ from sh import bash
 from nested_lookup import nested_lookup
 class Connection(object):
     """Connection object to interact with the GenieACS server."""
-    def __init__(self, ip="110.44.112.37", port=7557, ssl=False, verify=False, auth=False, user="", passwd="", url="", timeout=40):
+    def __init__(self, ip, port=7557, ssl=False, verify=False, auth=False, user="", passwd="", url="", timeout=40):
         self.server_ip = ip
         self.server_port = port
         self.use_ssl = ssl
