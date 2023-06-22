@@ -12,4 +12,17 @@ git clone https://github.com/yamangit/pythonGenieacsImproved.git
 ```bash
 from genieacs import Connection
 ```
+## Sample code
+```python
+from genieacs import Connection
+
+acs = Connection("x.x.x.x")
+# Device search using serial number
+data = acs.device_get_by_serial_new("device_serial")
+
+```
+
+
+
+
 
